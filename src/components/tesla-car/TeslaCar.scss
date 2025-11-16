@@ -79,3 +79,12 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .tesla-car {
+    width: 100%;
+    min-height: 350px;
+    background: #fff url(../../assets/tesla.jpg) no-repeat top center;
+    background-size: contain;
+  }
+}

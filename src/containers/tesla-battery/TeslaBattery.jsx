@@ -132,6 +132,7 @@ class TeslaBattery extends React.Component {
     const { config, carstats } = this.state;
     return (
       <form className="tesla-battery">
+        <br />
         <h1>Range Per Charge</h1>
         <TeslaCar wheelsize={config.wheels} />
         <TeslaStats carstats={carstats} />

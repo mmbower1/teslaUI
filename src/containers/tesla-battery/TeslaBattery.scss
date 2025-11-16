@@ -4,12 +4,12 @@
 }
 
 .tesla-battery h1 {
-  font-family: 'RobotoNormal';
-    font-weight: 100;
-    font-size: 38px;
-    text-align: center;
-    letter-spacing: 3px;
-}   
+  font-family: "RobotoNormal";
+  font-weight: 100;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 3px;
+}
 
 .tesla-climate-container {
   float: left;
@@ -22,4 +22,28 @@
 .tesla-controls {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  .tesla-battery {
+    padding: 3rem 2.5rem;
+  }
+  .tesla-battery h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tesla-battery {
+    padding: 4rem 3rem;
+    max-width: 560px;
+    border-radius: 2rem;
+  }
+  .tesla-battery h1 {
+    font-size: 2.8rem;
+  }
+
+  // .tesla-controls {
+  //   display: flex;
+  // }
 }
