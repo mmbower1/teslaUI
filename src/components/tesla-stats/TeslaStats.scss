@@ -12,7 +12,7 @@
 .tesla-stats ul li p {
   font-size: 40px;
   font-weight: normal;
-  font-family: 'RobotoNormal';
+  font-family: "RobotoNormal";
   display: block;
   padding: 0 18px 0 0;
   position: relative;
@@ -22,8 +22,8 @@
 .tesla-stats ul li p:after {
   font-size: 14px;
   font-weight: normal;
-  font-family: 'RobotoNormal';
-  content: 'MI';
+  font-family: "RobotoNormal";
+  content: "MI";
   position: absolute;
   top: 8px;
   right: 0;
@@ -51,4 +51,10 @@
 }
 .tesla-stats-icon--p100d {
   background-image: url(../../assets/models/p100d.svg);
+}
+
+@media (max-width: 768px) {
+  .tesla-stats ul {
+    // padding-top: 100px 0 30px;
+  }
 }
