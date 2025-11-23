@@ -10,7 +10,7 @@
   margin: 10px 0 0;
   padding-right: 40px;
 }
-.tesla-counter__container input[type='number'] {
+.tesla-counter__container input[type="number"] {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -21,11 +21,12 @@
   width: 1px;
 }
 .tesla-counter__number {
-  font-family: 'RobotoNormal';
+  font-family: "RobotoNormal";
   font-size: 25px;
   line-height: 25px;
   font-weight: 400;
   position: relative;
+  padding-left: 10px;
 }
 .tesla-counter__number span {
   position: absolute;
@@ -81,4 +82,10 @@
 .tesla-counter__controls button:last-child {
   border-top: 1px solid #ccc;
   background-image: url(../../assets/counter/down.svg);
+}
+
+@media (max-width: 840px) {
+  .tesla-counter__item {
+    margin-bottom: 50px;
+  }
 }

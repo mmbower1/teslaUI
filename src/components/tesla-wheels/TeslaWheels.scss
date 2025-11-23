@@ -65,12 +65,26 @@
 }
 
 /* Desktop – larger and more premium */
-@media (max-width: 1024px) {
-  .tesla-wheels {
-    padding: 3rem;
-    max-width: 600px;
-  }
 
+@media (max-width: 767px) {
+  .tesla-wheels {
+    height: 130px;
+    padding: 3rem;
+    max-width: 365px;
+
+    .tesla-wheel--front {
+      height: 40px;
+      width: 50px;
+    }
+
+    .tesla-wheel--rear {
+      height: 40px;
+      width: 50px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
   .tesla-wheels__title {
     font-size: 1.8rem;
   }

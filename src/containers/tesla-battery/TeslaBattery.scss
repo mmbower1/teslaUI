@@ -43,7 +43,12 @@
     font-size: 2.8rem;
   }
 
-  // .tesla-controls {
-  //   display: flex;
-  // }
+  .tesla-controls {
+    display: inline-block;
+    // padding-top: 50px;
+
+    .tesla-counter__item {
+      // padding-top: 100px;
+    }
+  }
 }

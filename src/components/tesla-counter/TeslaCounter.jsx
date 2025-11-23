@@ -1,5 +1,5 @@
-import React from 'react';
-import './TeslaCounter.scss';
+import React from "react";
+import "./TeslaCounter.scss";
 
 const TeslaCounter = ({ currentValue, increment, decrement, initValues }) => (
   <div className="tesla-counter">
@@ -7,24 +7,22 @@ const TeslaCounter = ({ currentValue, increment, decrement, initValues }) => (
     <div className="tesla-counter__container cf">
       <div className="tesla-counter__item">
         <p className="tesla-counter__number">
-          { currentValue }
-          <span>{ initValues.unit }</span>
+          {currentValue}
+          <span>{initValues.unit}</span>
         </p>
         <div className="tesla-counter__controls">
-          <button 
-            onClick={(e) => increment(e, initValues.title)} 
-            disabled={currentValue >= initValues.max} 
-          >
-          </button>
-          <button 
-            onClick={(e) => decrement(e, initValues.title)} 
-            disabled={currentValue <= initValues.min} 
-          >
-          </button>
+          <button
+            onClick={(e) => increment(e, initValues.title)}
+            disabled={currentValue >= initValues.max}
+          ></button>
+          <button
+            onClick={(e) => decrement(e, initValues.title)}
+            disabled={currentValue <= initValues.min}
+          ></button>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 );
 
 // TeslaCounter.propTypes = {
