@@ -35,8 +35,8 @@
 
 @media (max-width: 768px) {
   .tesla-battery {
-    padding: 4rem 3rem;
-    max-width: 480px;
+    padding: 4rem 2rem;
+    max-width: 450px;
     border-radius: 2rem;
   }
   .tesla-battery h1 {
@@ -50,5 +50,9 @@
     .tesla-counter__item {
       // padding-top: 100px;
     }
+  }
+
+  .tesla-battery h1 {
+    font-size: 25px;
   }
 }
