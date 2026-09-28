@@ -24,40 +24,45 @@
   width: 100%;
 }
 
-@media (max-width: 640px) {
-  .tesla-battery {
-    padding: 3rem 2.5rem;
-  }
-  .tesla-battery h1 {
-    font-size: 2.4rem;
-  }
-}
-
 @media (max-width: 768px) {
   .tesla-battery {
-    padding: 4rem 2rem;
     width: 100%;
     max-width: 450px;
-    border-radius: 2rem;
+    padding: 1.5rem 1rem 0;
   }
   .tesla-battery h1 {
     font-size: 25px;
+    margin-bottom: 16px;
   }
 
+  // Stack the control sections, centered, with a thin divider between each
   .tesla-controls {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .tesla-controls > * {
+    width: 100%;
+    padding: 24px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+
   .tesla-climate-container {
     float: none;
-    width: 100%;
-    max-width: 420px;
+    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
     margin: 0;
-    padding: 0 40px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  // clearfix pseudo-elements would otherwise count as flex items and add gaps
+  .tesla-climate-container:before,
+  .tesla-climate-container:after {
+    display: none;
   }
 }

@@ -55,10 +55,34 @@
 
 @media (max-width: 768px) {
   .tesla-stats {
-    margin-right: 50px;
+    margin: 16px auto 24px;
+  }
+
+  // 3 x 2 grid of models, each centered in its cell
+  .tesla-stats ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    max-width: 360px;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  .tesla-stats ul li {
+    width: auto;
+    text-align: center;
+  }
+
+  .tesla-stats-icon {
+    background-position: top center;
   }
 
   .tesla-stats ul li p {
+    display: inline-block;
     font-size: 25px;
+  }
+
+  .tesla-stats ul li p:after {
+    top: 3px;
   }
 }

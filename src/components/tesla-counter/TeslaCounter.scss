@@ -84,17 +84,21 @@
   background-image: url(../../assets/counter/down.svg);
 }
 
-@media (max-width: 840px) {
-  .tesla-counter__item {
-    margin-bottom: 50px;
-  }
-
+@media (max-width: 768px) {
   .tesla-counter {
     float: none;
-    width: 230px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tesla-counter__container {
+    max-width: 260px;
+    margin: 10px auto 0;
+    padding-right: 0;
   }
 
   .tesla-counter__item {
-    padding-bottom: 55px;
+    display: block;
+    margin: 0;
   }
 }

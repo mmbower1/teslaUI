@@ -80,11 +80,39 @@
   }
 }
 
-@media (max-width: 480px) {
+// Mobile: crop tesla.jpg to the car (middle 64% x 62%) so it fills the width,
+// and position the wheels as percentages of that crop so they stay on the hubs
+@media (max-width: 768px) {
   .tesla-car {
-    width: 100%;
-    min-height: 260px;
-    background: #fff url(../../assets/tesla.jpg) no-repeat top center;
-    background-size: contain;
+    position: relative;
+    min-height: 0;
+    aspect-ratio: 2.638;
+    background-size: 156.25% auto;
+    background-position: center center;
+  }
+
+  .tesla-wheels {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .tesla-wheel {
+    margin: 0;
+    top: 46.3%;
+    bottom: auto;
+    width: 13.97%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .tesla-wheel--front {
+    left: 10.8%;
+  }
+  .tesla-wheel--rear {
+    left: 71.92%;
+    right: auto;
   }
 }

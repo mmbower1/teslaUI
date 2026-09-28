@@ -59,3 +59,13 @@
   position: absolute;
   width: 1px;
 }
+
+@media (max-width: 768px) {
+  .tesla-climate {
+    float: none;
+  }
+
+  .tesla-climate__item {
+    margin: 0 auto;
+  }
+}
